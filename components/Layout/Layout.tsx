@@ -1,5 +1,9 @@
 import React from 'react';
 import Navbar from '@components/Navbar/Navbar';
+
+// import '../style.css';
+import styles from './layout.module.css';
+
 // Agregamos a el archivo "tsconfig.json" la configuracion para 
 // poder usar "@components" y simplificar las rutas.
 
@@ -15,10 +19,19 @@ import Navbar from '@components/Navbar/Navbar';
 
 const Layout: React.FC  = ({ children }) => {
   return (
+    // <div className='container'> <-- para poner los estilos convencionales (.css)
+    // <div className={styles.container}> 
+    // {/* ^-- De esta forma se agregan los estilos con module.css */}
     <div>
       <Navbar />
         {children}
-      <footer>This is the footer</footer>
+      <footer className="container">This is the footer</footer>
+
+      <style jsx>{`
+        .container {
+          background: salmon;
+        }
+      `}</style>
     </div>
   );
 };

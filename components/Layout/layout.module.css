@@ -1,0 +1,8 @@
+/* Este es el archivo de module css (.module.css)
+   Se debe crear en la misma carpeta que el elemento al
+   que se le desea agregar.
+*/
+
+.container {
+  background-color: salmon;
+}
