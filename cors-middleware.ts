@@ -1,7 +1,6 @@
-import corsWrapper from 'cors'
-//import { RequestHandler } from 'express'
+import corsWrapper from 'cors';
+import { RequestHandler } from 'express';
 
-const RequestHandler = require('express');
 
 /**
  * Hey there you curious :)
